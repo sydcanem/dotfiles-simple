@@ -1,6 +1,5 @@
 (setq load-path
-			(append (list
-							 (expand-file-name "~/.emacs.d/js2")) load-path))
+			(append (list (expand-file-name "~/.emacs.d/js2")) load-path))
 
 (autoload 'js2-mode "js2" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
@@ -13,10 +12,13 @@
 (setq-default indent-tabs-mode t)
 ; tabs width is set to two spaces
 (setq-default tab-width 2)
-; set tab-stop to 2 spaces
+; set tab-stop to 2 spaces hooks
 (add-hook 'js2-mode-hook
 	'(lambda ()
 		(setq js2-basic-offset 2)))
+(add-hook 'emacs-lisp-mode-hook
+	'(lambda ()
+		 (setq  emacs-lisp-basic-offset 2)))
 
 (setq backup-directory-alist
 	'((".*" . "~/.emacs.trash"))) ; move backups files from current file directory to ~/.emacs.trash
