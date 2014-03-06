@@ -1,0 +1,12 @@
+[user]
+	name = sydcanem
+	email = icqhv.santos@gmail.com
+[push]
+	default = upstream
+[core]
+	editor = Emacs
+	ignorecase = false
+	fileMode = false
+	quotepath = false
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

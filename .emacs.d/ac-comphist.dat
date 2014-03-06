@@ -1,0 +1,264 @@
+((("server" .
+	 [0 0 0 1 0 0])
+	("output" .
+	 [0 0 0 0 0 1])
+	("initialView" .
+	 [1 1 0 0 0 0 0 0 0 0 0])
+	("adjustTextInput" .
+	 [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+	("onKeyUp" .
+	 [1 0 0 0 0 0 0])
+	("error" .
+	 [1 0 0 0 0])
+	("removeClass" .
+	 [0 0 0 0 0 0 0 0 0 0 1])
+	("replace" .
+	 [0 0 1 0 0 0 0])
+	("onKeyDown" .
+	 [0 0 0 1 0 0 0 0 0])
+	("answer" .
+	 [3 0 0 0 0 1])
+	("val" .
+	 [1 0 0])
+	("textInput" .
+	 [0 0 1 0 0 0 1 0 0])
+	("ui" .
+	 [2 0])
+	("evt" .
+	 [1 0 0])
+	("set" .
+	 [1 0 0])
+	("FilterableCollection" .
+	 [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+	("src" .
+	 [1 0 0])
+	("collection" .
+	 [9 1 5 1 0 0 0 0 0 0])
+	("libs" .
+	 [1 0 0 0])
+	("Collection" .
+	 [1 0 1 1 1 2 5 1 0 5])
+	("backbone" .
+	 [0 0 0 0 1 1 0 1])
+	("defined" .
+	 [0 0 1 0 0 0 0])
+	("yasnippet" .
+	 [0 0 2 0 0 0 0 0 0])
+	("~/.emacs.d/js2" .
+	 [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+	("Web" .
+	 [2 0 1])
+	("kbd" .
+	 [2 0 1])
+	("web-mode.el" .
+	 [0 0 0 0 0 0 0 0 0 0 1])
+	("web-mode-hook" .
+	 [0 0 0 0 0 0 0 0 0 0 1 0 2])
+	("auto-mode-alist" .
+	 [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+	("web-mode" .
+	 [1 0 0 0 0 0 0 4])
+	("load-path" .
+	 [1 0 0 0 0 0 0 1 1])
+	("add-to-list" .
+	 [0 0 0 0 0 1 3 0 0 0 1])
+	("require" .
+	 [0 0 0 0 1 0 6])
+	("setq-default" .
+	 [0 0 0 0 0 0 0 0 0 1 0 0])
+	("js-mode-indent-hook" .
+	 [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+	("js2-mode-hook" .
+	 [0 0 2 0 0 0 0 0 0 2 0 0 0])
+	("add-hook" .
+	 [0 0 0 1 0 0 0 5])
+	("defun" .
+	 [1 0 0 0 1])
+	("previous-line" .
+	 [0 0 0 0 0 1 0 0 0 0 0 0 0])
+	("next-lin" .
+	 [0 0 0 0 1 0 0 0])
+	("com" .
+	 [1 0 0])
+	("original" .
+	 [0 0 0 1 0 0 0 0])
+	("listenTo" .
+	 [0 0 1 0 0 1 0 1])
+	("this" .
+	 [47 0 0 0])
+	("_restore" .
+	 [0 0 0 1 0 1 0 0])
+	("_setOriginal" .
+	 [0 0 0 1 1 0 2 0 0 0 0 0])
+	("global-set-key" .
+	 [0 0 0 0 0 0 1 0 0 0 0 0 0 8])
+	("next" .
+	 [0 0 0 1])
+	("setq" .
+	 [4 0 0 6])
+	("initial" .
+	 [0 0 0 0 0 0 1])
+	("function" .
+	 [18 0 0 1 1 0 1 0])
+	("return" .
+	 [4 0 2 0 5 0])
+	("testMethod" .
+	 [1 0 0 0 0 0 0 0 0 0])
+	("var" .
+	 [7 0 0])
+	("filterable" .
+	 [1 0 0 0 0 0 3 0 0 0])
+	("ExtendedCollection" .
+	 [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+	("describe" .
+	 [1 0 4 6 2 0 0 3])
+	("should" .
+	 [5 0 0 0 1 1])
+	("have" .
+	 [1 0 0 0])
+	("the" .
+	 [2 0 0])
+	("define" .
+	 [1 0 0 0 0 0])
+	("extend" .
+	 [1 0 0 0 0 0])
+	("lambda" .
+	 [0 0 1 4 0 0])
+	("browse-url-of-buffer" .
+	 [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+	("console" .
+	 [2 0 0 0 0 0 0])
+	("log" .
+	 [1 0 0])
+	("sydcanem" .
+	 [0 0 1 0 0 0 0 0])
+	("subdomain" .
+	 [0 0 0 0 0 0 0 0 1])
+	("PlayerItemView" .
+	 [0 0 2 1 0 0 0 0 0 0 0 0 0 0])
+	("view" .
+	 [1 0 0 2])
+	("player" .
+	 [1 0 0 0 0 0])
+	("ReflectionItemView" .
+	 [0 0 0 2 7 1 4 0 0 0 0 0 0 0 0 0 0 3])
+	("reflection" .
+	 [10 0 0 2 0 0 1 0 0 4])
+	("Return" .
+	 [0 0 0 0 1 0])
+	("ReflectionComposite" .
+	 [0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 1])
+	("ReflectionCompositeView" .
+	 [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0])
+	("a" .
+	 [3])
+	("VideoPlayerLayout" .
+	 [0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+	("VideoReflectionModel" .
+	 [0 0 0 0 0 0 1 2 0 0 0 0 0 0 0 0 0 0 0 0])
+	("VideoReflectionCollection" .
+	 [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0])
+	("views" .
+	 [1 0 0 0 0])
+	("reset" .
+	 [1 0 0 0 1])
+	("id" .
+	 [5 0])
+	("question" .
+	 [1 0 0 0 0 0 0 5])
+	("Test" .
+	 [4 0 0 0])
+	("onShow" .
+	 [0 0 0 1 1 0])
+	("collections" .
+	 [1 0 0 0 0 0 0 0 0 0 0])
+	("Backbone" .
+	 [0 0 1 3 0 0 0 0])
+	("new" .
+	 [3 0 0])
+	("currentPage" .
+	 [0 0 6 18 3 1 1 0 1 0 0])
+	("length" .
+	 [0 0 0 2 1 0])
+	("paginateLeft" .
+	 [0 0 0 0 0 0 0 0 2 1 0 0])
+	("t" .
+	 [4])
+	("showQuestion" .
+	 [0 0 0 1 1 1 0 0 0 0 0 0])
+	("first" .
+	 [0 0 0 0 1])
+	("changePage" .
+	 [0 0 0 0 0 1 0 0 0 0])
+	("show" .
+	 [1 0 0 0])
+	("ItemView" .
+	 [0 0 0 1 0 0 0 0])
+	("page" .
+	 [7 0 0 5])
+	("showPage" .
+	 [0 0 0 0 0 1 3 0])
+	("model" .
+	 [2 0 0 0 2])
+	("index" .
+	 [1 0 0 0 0])
+	("Pagination" .
+	 [0 0 1 0 1 0 0 0 0 0])
+	("paginateRight" .
+	 [0 0 0 0 0 0 1 1 0 0 0 0 0])
+	("trigger" .
+	 [2 0 0 0 1 0 2])
+	("change" .
+	 [4 0 0 0 2 1])
+	("Cross" .
+	 [0 0 2 0 0])
+	("null" .
+	 [1 0 0 0])
+	("initialize" .
+	 [0 0 0 0 0 0 1 0 0 0])
+	("firstQuestion" .
+	 [0 0 0 0 0 0 0 1 0 0 0 0 0])
+	("reflectionItemView" .
+	 [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+	("s" .
+	 [2])
+	("get" .
+	 [1 0 0])
+	("before" .
+	 [0 0 0 1 0 0])
+	("render" .
+	 [0 0 0 1 0 0])
+	("it" .
+	 [3 0])
+	("relative" .
+	 [0 0 0 1 0 0 0 0])
+	("event" .
+	 [3 0 0 0 0])
+	("and" .
+	 [1 0 0])
+	("with" .
+	 [2 0 0 0])
+	("in" .
+	 [1 0])
+	("is" .
+	 [1 0])
+	("done" .
+	 [2 0 0 1])
+	("on" .
+	 [1 0])
+	("be" .
+	 [1 0])
+	("to" .
+	 [1 0])
+	("equal" .
+	 [1 0 1 0 0])
+	("correct" .
+	 [0 0 0 1 0 0 0])
+	("position" .
+	 [0 0 0 0 1 0 0 0])
+	("afterEach" .
+	 [0 0 0 0 0 0 0 0 1])
+	("after" .
+	 [1 0 0 0 0])
+	("ac-sources" .
+	 [0 0 0 1 0 0 0 0 0 0])))
