@@ -55,5 +55,11 @@ if [ -f ~/.git-completion.bash ]; then
 	. ~/.git-completion.bash
 fi
 
+if [ "$TERM" == "xterm" ]; then
+    # No it isn't, it's gnome-terminal
+    export TERM=xterm-256color
+fi
+
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=/usr/local/bin:$PATH
