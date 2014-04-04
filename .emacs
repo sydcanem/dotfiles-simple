@@ -3,6 +3,7 @@
 
 (autoload 'js2-mode "js2" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx$" . js2-mode))
 
 (require 'package)
 
@@ -21,6 +22,7 @@
  '(hl-paren-background-colors (quote ("blue")))
  '(hl-paren-colors (quote ("white" "white" "cyan" "cyan")))
  '(minimap-always-recenter t)
+ '(org-agenda-files (quote ("~/Org/notes.org" "~/Org/Todos.org")))
  '(org-startup-indented t)
  '(org-support-shift-select nil)
  '(tab-stop-list (number-sequence 4 200 4)))
@@ -142,8 +144,8 @@
             (imenu-add-menubar-index)
             ;; Activate the folding mode
             (hs-minor-mode t)))
-(global-set-key (kbd "C-h") 'hs-hide-block)
-(global-set-key (kbd "C-j") 'hs-show-block)
+(global-set-key (kbd "C-c C-h") 'hs-hide-block)
+(global-set-key (kbd "C-s") 'hs-show-block)
 ;;; end
 
 ;;; yasnippet engine !!!not working
@@ -190,10 +192,10 @@
 ;;; end
 
 ;;; jshint support
-(add-to-list 'load-path "~/.emacs.d/jshint-mode")
-(require 'flymake-jshint)
-(add-hook 'js2-mode-hook
-    (lambda () (flymake-mode t)))
+;; (add-to-list 'load-path "~/.emacs.d/jshint-mode")
+;; (require 'flymake-jshint)
+;; (add-hook 'js2-mode-hook
+;;     (lambda () (flymake-mode t)))
 ;;; end
 
 ;;; lesscss mode
@@ -210,20 +212,27 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ac-completion-face ((t (:foreground "brightwhite" :underline t))))
  '(custom-face-tag ((t (:foreground "cyan"))))
- '(font-lock-comment-face ((t (:foreground "brightyellow"))))
+ '(font-lock-builtin-face ((t (:foreground "color-33"))))
+ '(font-lock-comment-face ((t (:foreground "color-243"))))
  '(font-lock-constant-face ((t (:foreground "blue"))))
+ '(font-lock-function-name-face ((t (:foreground "green"))))
  '(font-lock-keyword-face ((t (:foreground "cyan"))))
  '(font-lock-string-face ((t (:foreground "green"))))
  '(font-lock-variable-name-face ((t (:foreground "yellow" :weight light))))
  '(hl-paren-face ((t nil)) t)
  '(js2-function-param ((t (:foreground "brightred"))))
  '(minibuffer-prompt ((t (:foreground "cyan"))))
+ '(org-agenda-done ((t (:foreground "green"))))
+ '(org-agenda-structure ((t (:foreground "white"))))
  '(org-date ((t (:foreground "blue" :underline t))))
  '(org-done ((t (:foreground "green" :weight bold))))
- '(org-hide ((t (:foreground "black"))))
+ '(org-hide ((t (:foreground "color-232"))))
  '(org-level-1 ((t (:foreground "color-144"))))
+ '(org-level-2 ((t (:foreground "brightcyan"))))
  '(org-level-3 ((t (:foreground "white"))))
+ '(org-scheduled-today ((t (:foreground "brightred"))))
  '(region ((t (:background "brightblue"))))
  '(secondary-selection ((t (:background "color-100")))))
 
@@ -237,15 +246,27 @@
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline (concat org-directory "/Todos.org") "Work")
-         "** TODO %t %?\n %i\n %a")))
+         "** TODO %?\n %i\n %a")
+        ("i" "Inbox" entry (file+headline (concat org-directory "/Todos.org") "Inbox")
+         "** TODO %?\n %i\n")
+        ("n" "Notes" plain (file (concat org-directory "/notes.org"))
+         "- %?\n %x\n")))
 (global-set-key (kbd "C-c r") 'org-capture)
 
 (global-set-key (kbd "C-c a") 'org-agenda)
 (setq org-todo-keywords '("TODO" "STARTED" "WAITING" "HOLD" "DONE"))
-(setq org-agenda-include-diary t)
-(setq org-agenda-include-all-todo t)
 
 ;; Remap conflicting keys
 (global-set-key (kbd "M-+") 'org-shiftright)
 (global-set-key (kbd "M--") 'org-shiftleft)
+
+;; Org agenda on startup
+(setq inhibit-splash-screen t)
+(org-agenda-list)
+(delete-other-windows)
+;;; end
+
+;;; 2048
+(add-to-list 'load-path "~/.emacs.d/emacs-2048/")
+(load-file "~/.emacs.d/emacs-2048/2048.el")
 ;;; end

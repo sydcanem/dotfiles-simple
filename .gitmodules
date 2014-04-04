@@ -1,3 +1,21 @@
 [submodule "yasnippet"]
     path = .emacs.d/yasnippet
     url = https://github.com/capitaomorte/yasnippet.git
+[submodule "less-css-mode"]
+    path = .emacs.d/less-css-mode
+    url = https://github.com/purcell/less-css-mode.git
+[submodule "markdown-mode"]
+    path = .emacs.d/markdown-mode
+    url = git://jblevins.org/git/markdown-mode.git
+[submodule "orgmode"]
+    path = .emacs.d/orgmode
+    url = git://orgmode.org/org-mode.git
+[submodule "flymake-easy"]
+    path = .emacs.d/flymake-easy
+    url = https://github.com/purcell/flymake-easy.git
+[submodule "flymake-jslint"]
+    path = .emacs.d/flymake-jslint
+    url = https://github.com/purcell/flymake-jslint.git
+[submodule "highlight-parenthesis"]
+    path = .emacs.d/highlight-parenthesis
+    url = https://github.com/nschum/highlight-parentheses.el.git
